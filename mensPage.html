@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+    }
+    #container>div{
+        padding:30px;
+    }
+    #container>div>div{
+    display: flex;
+    align-items: center;
+    gap:10px
+    }
+    #container>div>img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #container>div>h3,#container>div>div{
+        margin:0;
+    }
+    #container>div>p{
+        margin:0;
+        color:grey;
+    }
+    #container>div>div>h3+p{
+        color:grey;
+        text-decoration:line-through;
+    }
+    #container> div> div> p+p{
+        color:green;
+    }
+</style>
+<body>
+    <div id="container">
+        <div>
+            <img src="https://thumbs.dreamstime.com/b/business-man-shrug-268523.jpg">
+            <h3>Pause</h3>
+            <p>Men Cotton Long Sleeves Shrug</p>
+            <div >
+                <h3>₹ 359</h3><p>₹ 1499</p><p>-76%</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://thumbs.dreamstime.com/b/business-man-shrug-268523.jpg">
+            <h3>Pause</h3>
+            <p>Men Cotton Long Sleeves Shrug</p>
+            <div >
+                <h3>₹ 359</h3><p>₹ 1499</p><p>-76%</p></div>
+        </div>
+        <div>
+            <img src="https://thumbs.dreamstime.com/b/business-man-shrug-268523.jpg">
+            <h3>Pause</h3>
+            <p>Men Cotton Long Sleeves Shrug</p>
+            <div >
+                <h3>₹ 359</h3><p>₹ 1499</p><p>-76%</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://thumbs.dreamstime.com/b/business-man-shrug-268523.jpg">
+            <h3>Pause</h3>
+            <p>Men Cotton Long Sleeves Shrug</p>
+            <div >
+                <h3>₹ 359</h3><p>₹ 1499</p><p>-76%</p></div>
+        </div>
+    </div>
+</body>
+</html>
